@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+h1, h3, h4, h6, label {
+    margin: 10px 0 !important;
+    color: white;
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}

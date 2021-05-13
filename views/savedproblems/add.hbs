@@ -1,0 +1,14 @@
+<h3>Save Problem</h3>
+<form action="/savedproblems" method="POST">
+  <div class="mb-3">
+    <label class="form-label">Problem name</label>
+    <input id="title" name="title" class="form-control" type="text" placeholder="Paste the same problem name as shown on the problems list page" aria-label="default input example">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Problem link</label>
+    <input id="body" name="body" class="form-control" type="text" placeholder="Paste the problem link here" aria-label="default input example">
+  </div>
+  
+  <input type="submit" value="Save" class="btn btn-primary">
+  <a href="/home" class="btn btn-danger">Cancel</a>
+</form>

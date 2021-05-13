@@ -1,0 +1,36 @@
+<div class="float-end">
+    <a href="/auth/logout" class="btn btn-danger">Log Out</a>
+</div>
+
+<h6>Dashboard</h6>
+<h3>Welcome {{name}}</h3>
+
+<div class="container">
+    <div class="row row-cols-auto m-4">
+        {{#each problemlist}}
+        <a href="/{{link}}" class="btn btn-primary m-1">{{name}}</a>
+        {{/each}}
+    </div>
+</div>
+
+{{#if problems}}
+<h4>Here are the problems that you have solved.</h4>
+<table class="table table-success table-striped m-4">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each problems}}
+        <tr>
+            <td><a href="{{body}}" target="_blank">{{title}}</a></td>
+            <td>{{createdAt}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<h4>You have not solved any problem.</h4>
+{{/if}}

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row row-cols-3 m-4">
+        {{#each list}}
+        <div class="card m-1" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <a href="{{link}}" target="_blank" class="btn btn-primary">Open problem</a>
+                {{{editIcon name ../problems }}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
